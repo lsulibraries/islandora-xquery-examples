@@ -1,6 +1,8 @@
 xquery version "3.0" encoding "UTF-8";
 declare namespace mods="http://www.loc.gov/mods/v3";
 
+(: add an attribute into a particular element :)
+
 copy $xml := .
 modify (
     for $abstract in $xml/mods:mods/mods:abstract
